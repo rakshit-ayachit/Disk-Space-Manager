@@ -3,7 +3,7 @@ from custom_msg import CustomMessageBox,show_custom_message_box
 from visualisation_piechart import DiskSpaceVisualizerGUI
 from temp_file_manager import TempFileManager
 from tkinter import filedialog, messagebox
-from large_file import FileVisualizerApp 
+from large_file import LargeFile
 from file_compression import compress_files 
 from same_type_files import FileSelectorGUI
 from disk_space import DiskSpaceVisualizer
@@ -79,6 +79,11 @@ def display_disk_utilization():
     root = tk.Toplevel()
     app = DiskSpaceVisualizerGUI(root)
 
+def show_large():
+    root = tk.Tk()
+    app = LargeFile(root)
+    root.mainloop()
+
 
 
 if __name__ == "__main__":
@@ -104,7 +109,7 @@ if __name__ == "__main__":
     duplicate_button=ctk.CTkButton(root,text="Find Duplicate Files",command=check_dup, font= ("Montserrat", 13))
     duplicate_button.pack(padx=10,pady=10)
 
-    file_visualizer_button = ctk.CTkButton(root, text="Find Large Files", command=open_file_visualizer_app, font= ("Montserrat", 13))
+    file_visualizer_button = ctk.CTkButton(root, text="Find Large Files", command=show_large, font= ("Montserrat", 13))
     file_visualizer_button.pack(padx=10,pady=10)
 
     delete_button=ctk.CTkButton(root,text="Delete Files",command=file_del, font= ("Montserrat", 13))

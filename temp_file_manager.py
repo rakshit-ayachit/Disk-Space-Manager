@@ -1,8 +1,8 @@
-import os
+import tkinter.messagebox as messagebox
 import send2trash
 import tempfile
-import tkinter.messagebox as messagebox
 import psutil
+import os
 
 class TempFileManager:
     def remove_temp_files(self):

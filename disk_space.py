@@ -68,7 +68,3 @@ class DiskSpaceVisualizer:
             label_free.pack(side=tk.LEFT, padx=10)
 
         self.root.mainloop()
-
-# if __name__ == "__main__":
-#     visualizer = DiskSpaceVisualizer()
-#     visualizer.display()

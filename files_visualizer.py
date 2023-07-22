@@ -1,16 +1,12 @@
+from typing import List, Tuple, Optional
 from __future__ import annotations
-import os
-import math
-from tkinter import messagebox
-import pygame
-from typing import List, Tuple, Optional
-import os
-import math
-import pygame
-import sys
-import tkinter as tk
 from tkinter import filedialog
-from typing import List, Tuple, Optional
+from tkinter import messagebox
+import tkinter as tk
+import pygame
+import math
+import sys
+import os
 
 
     

@@ -1,9 +1,8 @@
-import os
-import tkinter as tk
-import customtkinter as ctk
 from tkinter import filedialog, ttk, messagebox
-
 from file_compression import compress_files
+import customtkinter as ctk
+import tkinter as tk
+import os
 
 class FileSelectorGUI(tk.Toplevel):
     FILE_EXTENSIONS = {
@@ -157,9 +156,4 @@ class FileSelectorGUI(tk.Toplevel):
             messagebox.showinfo("Success", "Files compressed successfully.")
         else:
             messagebox.showwarning("Warning", "Compression canceled.")
-
-# if __name__ == "__main__":
-#     root = tk.Tk()
-#     root.title("File System Manager")
-#     root.geometry(f"{500}x500")
    

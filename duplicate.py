@@ -1,9 +1,9 @@
-import os
-import hashlib
-import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 from concurrent.futures import ThreadPoolExecutor
 import customtkinter as ctk
+import tkinter as tk
+import hashlib
+import os
 
 def get_file_hash(file_path, block_size=65536):
     hasher = hashlib.sha256()
@@ -82,7 +82,6 @@ class DuplicateFilesGUI(tk.Toplevel):
         self.checkboxes = []
         self.scrollable_frame = None
 
-
     def toggle_select_all(self):
         select_all_state = self.select_all_var.get()
         for var, _, _ in self.checkboxes:
@@ -147,7 +146,3 @@ class DuplicateFilesGUI(tk.Toplevel):
 
                 for checkbox in self.scrollable_frame.winfo_children():
                     checkbox.destroy()
-
-#if __name__ == "__main__":
-    #duplicate_files_gui = DuplicateFilesGUI()
-    #duplicate_files_gui.mainloop()

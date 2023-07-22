@@ -32,7 +32,7 @@ class CustomMessageBox(tk.Toplevel):
 
 def show_custom_message_box(title, message, button1_text, button2_text):
     root = tk.Tk()
-    root.withdraw()  # Hide the main window
+    root.withdraw()
 
     dialog = CustomMessageBox(root, title, message, button1_text, button2_text)
     dialog.wait_window()

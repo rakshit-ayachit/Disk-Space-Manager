@@ -1,10 +1,10 @@
-import os
-import hashlib
-import tkinter as tk
 from tkinter import IntVar, filedialog, messagebox, ttk
-import zipfile
-import send2trash
 import customtkinter as ctk
+import tkinter as tk
+import send2trash
+import hashlib
+import zipfile
+import os
 
 
 def get_file_hash(file_path, block_size=65536):
@@ -215,9 +215,3 @@ class FileVisualizerApp:
             size /= power
             n += 1
         return f"{size:.2f} {power_labels[n]}B"
-
-# if __name__ == "__main__":
-#      root = tk.Tk()
-#      root.configure(bg="lightblue")
-#      app = FileVisualizerApp(root)
-#      root.mainloop()

@@ -1,5 +1,5 @@
-from tkinter import ttk, filedialog, messagebox
 from concurrent.futures import ThreadPoolExecutor
+from tkinter import ttk, filedialog, messagebox
 import customtkinter as ctk
 import tkinter as tk
 import hashlib

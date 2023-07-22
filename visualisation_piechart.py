@@ -1,11 +1,11 @@
-import os
-import tkinter as tk
-from tkinter import ttk
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from tkinter import filedialog
 import matplotlib.pyplot as plt
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-from math import *
 import customtkinter as ctk
+from tkinter import ttk
+import tkinter as tk
+from math import *
+import os
 
 FILE_EXTENSIONS = {
     "Audio": [".aif", ".cda", ".mid", ".midi", ".mp3", ".mpa", ".ogg", ".wav", ".wma", ".wpl"],
@@ -92,7 +92,6 @@ class DiskSpaceVisualizerGUI:
 
 
     def create_widgets(self):
-        # Input directory selection
         directory_frame = ttk.Frame(self.root)
         directory_frame.pack(pady=10)
 
@@ -100,16 +99,9 @@ class DiskSpaceVisualizerGUI:
         ttk.Entry(directory_frame, textvariable=self.directory_path, width=50, state="readonly").pack(side=tk.LEFT)
         ctk.CTkButton(directory_frame, text="Browse", command=self.get_directory_path).pack(side=tk.LEFT)
 
-        # Pie chart frame
         self.pie_frame = ttk.Frame(self.root)
         self.pie_frame.pack(pady=20)
 
-        # Canvas to display the pie chart
         self.canvas = FigureCanvasTkAgg(self.fig, master=self.pie_frame)
         self.canvas.draw()
         self.canvas.get_tk_widget().pack()
-
-# if __name__ == "__main__":
-#     root = tk.Tk()
-#     app = DiskSpaceVisualizerGUI(root)
-#     root.mainloop()

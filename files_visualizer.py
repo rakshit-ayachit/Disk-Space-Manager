@@ -1,5 +1,5 @@
-from typing import List, Tuple, Optional
 from __future__ import annotations
+from typing import List, Tuple, Optional
 from tkinter import filedialog
 from tkinter import messagebox
 import tkinter as tk

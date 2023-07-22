@@ -1,6 +1,6 @@
 from typing import List
-import os
 import zipfile
+import os
 
 def compress_files(output_zip: str, files: List[str]):
     with zipfile.ZipFile(output_zip, 'w', zipfile.ZIP_DEFLATED) as zipf:

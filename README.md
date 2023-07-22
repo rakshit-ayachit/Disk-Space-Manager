@@ -6,7 +6,7 @@ Disk Space Manager is a graphical user interface (GUI) application that helps us
 
 - Visualize file system trees to understand directory structures.
 - Find and remove duplicate files to reclaim storage space.
-- Display disk space utilization through interactive pie charts.
+- Display disk space utilization through interactive pie charts or realistic SSD format.
 - Identify and delete large files to free up storage.
 - Compress files into ZIP archives for efficient storage.
 - Clear temporary files to reclaim temporary storage space.
@@ -27,6 +27,11 @@ pip install -r requirements.txt
 1. Open the terminal or command prompt.
 2. Navigate to the directory where you cloned the project.
 3. Run the `main.py` script using Python: python main.py
+5. Click on the "Display Disk Space" button to see the disk space utilization.
+6. A dialog box will prompt you to choose the visualization method:
+   - Choose "Simplified Pie Chart" to view the disk space usage as a pie chart.
+   - Choose "Realistic SSD Format" to view the disk space usage in a realistic SSD format with partitions.
+
 
 The Disk Space Manager GUI application will open, and you can start using the provided functionalities.
 

@@ -42,7 +42,7 @@ def delete_file(file_path):
     except Exception as e:
         return False
 
-class FileVisualizerApp:
+class LargeFile:
     def __init__(self, root):
         self.root = root
         self.root.title("File System Visualizer")
@@ -150,7 +150,6 @@ class FileVisualizerApp:
             status = "Large files found:"
             self.status_label.config(text=status)
 
-            # Add Checkbox for file selection
             for file, size in large_files:
                 var = IntVar()
                 checkbox = tk.Checkbutton(self.scroll_frame, text=file, variable=var)

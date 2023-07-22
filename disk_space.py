@@ -1,6 +1,7 @@
-import psutil
-import tkinter as tk
 from tkinter import ttk, font
+import tkinter as tk
+import psutil
+
 
 class DiskSpaceVisualizer:
     def __init__(self):

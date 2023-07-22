@@ -48,8 +48,3 @@ class FileDeletionGUI(tk.Toplevel):
             messagebox.showinfo("Deleted", f"'{path}' deleted successfully.")
         except Exception as e:
             messagebox.showerror("Error", f"Error deleting '{path}': {e}")
-
-# if __name__ == "__main__":
-#     root = tk.Toplevel()
-#     root.geometry(f"{500}x500")
-#     root.mainloop()

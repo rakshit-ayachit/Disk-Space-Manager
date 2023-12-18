@@ -53,7 +53,7 @@ pip install -r requirements.txt
 The Disk Space Manager GUI application will open, and you can start using the provided functionalities.
 
 ## Screenshots
-![Python 3 11 12_18_2023 10_45_13 PM](https://github.com/rakshit-ayachit/Disk-Space-Manager/assets/1298
+![Python 3 11 12_18_2023 10_45_13 PM](https://github.com/rakshit-ayachit/Disk-Space-Manager/assets/129822642/25fe628c-4b70-4a0c-8476-782140b7fefa)
 ![Python 3 11 12_18_2023 10_46_15 PM](https://github.com/rakshit-ayachit/Disk-Space-Manager/assets/129822642/8d51d87c-a735-41da-901e-63f5a2d7fccc)
 22642/6081d92c-b1fa-4735-bab3-10854d4d03c2)
 ![Python 3 11 12_18_2023 10_46_23 PM](https://github.com/rakshit-ayachit/Disk-Space-Manager/assets/129822642/01d72c2a-bc79-45be-8559-ee435140432e)
